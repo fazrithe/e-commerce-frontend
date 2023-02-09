@@ -1,6 +1,13 @@
 import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import Head from 'next/head'
+import "@fortawesome/fontawesome-svg-core/styles.css"; 
+import '@fontsource/roboto/300.css';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
+import Link from 'next/link';
+import Navbar from "@/components/home/navbar"
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -12,17 +19,14 @@ export default function App({ Component, pageProps }: AppProps) {
         <link rel="icon" href="/favicon.ico" />
          {/* eslint-disable-next-line @next/next/no-css-tags */}
          <link href="//netdna.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
-      </Head>
+     </Head>
+     
+     <Navbar />
         <Component {...pageProps} />
        {/* credits */}
-       <div className="text-center mt-4">
-                <p>
-                    <a href="#" target="_top">Master Next JS</a>
-                </p>
-                <p>
-                    <a href="https://github.com/fazrithe" target="_top">Fazrithe</a>
-                </p>
-            </div>
+      <div className="text-center mt-4">
+        <Link href="#">Fazri</Link>
+      </div>
   </>
   )
 }

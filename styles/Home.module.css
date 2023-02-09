@@ -151,6 +151,14 @@
   background-clip: content-box;
 }
 
+.humberger__menu__logo {
+  margin-bottom: 30px;
+  margin-top: 1000px;
+}
+.humberger__menu__logo a {
+  display: inline-block;
+}
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {

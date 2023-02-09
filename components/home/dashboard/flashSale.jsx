@@ -23,16 +23,72 @@ export default function FlashSale(){
   return(
     <>
         <Grid item xs={6} sm={3}>
-            <Paper style={classes.paper}>xs=6 sm=3</Paper>
+            <Card sx={{ maxWidth: 345 }}>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  height="140"
+                  image="/products/kemejapria.jpg"
+                  alt="green iguana"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h6" component="div">
+                    Rp. 70.000
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
         </Grid>
         <Grid item xs={6} sm={3}>
-            <Paper style={classes.paper}>xs=6 sm=3</Paper>
+            <Card sx={{ maxWidth: 345 }}>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  height="140"
+                  image="/products/kemejapria.jpg"
+                  alt="green iguana"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h6" component="div">
+                    Rp. 70.000
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
         </Grid>
         <Grid item xs={6} sm={3}>
-        <Paper style={classes.paper}>xs=6 sm=3</Paper>
+            <Card sx={{ maxWidth: 345 }}>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  height="140"
+                  image="/products/kemejapria.jpg"
+                  alt="green iguana"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h6" component="div">
+                    Rp. 70.000
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
         </Grid>
         <Grid item xs={6} sm={3}>
-        <Paper style={classes.paper}>xs=6 sm=3</Paper>
+            <Card sx={{ maxWidth: 345 }}>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  height="140"
+                  image="/products/kemejapria.jpg"
+                  alt="green iguana"
+                />
+                <CardContent>
+                  <Typography gutterBottom variant="h6" component="div">
+                    Rp. 70.000
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
         </Grid>
    </>
   )

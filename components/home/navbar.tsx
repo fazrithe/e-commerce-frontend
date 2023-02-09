@@ -17,18 +17,10 @@ import { createTheme } from '@mui/material/styles';
 const pages = ['Products', 'Pricing', 'Blog'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 const theme = createTheme({
-    status: {
-      danger: '#e53e3e',
-    },
     palette: {
       primary: {
         main: '#b43fd4',
-        darker: '#b43fd4',
-      },
-      neutral: {
-        main: '#64748B',
-        contrastText: '#fff',
-      },
+      }
     },
   });
 const Navbar = () => {
@@ -51,7 +43,7 @@ const Navbar = () => {
   };
 
   return (
-    <AppBar position="static" theme={theme}>
+    <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />

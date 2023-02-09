@@ -31,7 +31,7 @@ export default function Home() {
               {/*But will be 6 units on small screens */}
               <CategoryHome />
               <Grid item xs={12} sm={6}>
-                <Paper style={classes.paper}>
+                <Paper>
                     <TabService />
                 </Paper>
               </Grid>

@@ -23,7 +23,6 @@ export default function CategoryHome(){
   return(
     <>
     <Grid item xs={12} sm={6}>
-    <Paper style={classes.paper}>
       <h4>Kategori Pilihan</h4>
         <Grid container spacing={2}>
           <Grid item xs={4}>
@@ -78,7 +77,6 @@ export default function CategoryHome(){
             </Card>
           </Grid>
         </Grid>
-    </Paper>
   </Grid>
   </>
   )

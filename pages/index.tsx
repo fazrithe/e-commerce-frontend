@@ -3,6 +3,7 @@ import Grid from "@mui/material/Grid"
 import Paper from "@mui/material/Paper"
 import CategoryHome from "@/components/home/dashboard/categoryHome";
 import TabService from "@/components/home/dashboard/tabService";
+import FlashSale from "@/components/home/dashboard/flashSale";
 
 const classes = {
   root: {
@@ -13,6 +14,10 @@ const classes = {
     textAlign: "center",
     color: "#b43fd4",
     fontFamily: "Roboto"
+  },
+
+  labelSale: {
+    color: "#b43fd4"
   }
 };
 export default function Home() {
@@ -20,7 +25,7 @@ export default function Home() {
       <div>
         <Container fixed>
         <div style={classes.root}>
-            <Grid container spacing={3} className="mt-4">
+            <Grid container spacing={1} className="mt-4">
               {/*This item will be 12 units on extra small screens */}
               {/*But will be 6 units on small screens */}
               <CategoryHome />
@@ -29,17 +34,11 @@ export default function Home() {
                     <TabService />
                 </Paper>
               </Grid>
-              <Grid item xs={6} sm={3}>
-                <Paper style={classes.paper}>xs=6 sm=3</Paper>
+              <Grid container spacing={1} className="mt-4 ml-2">
+              <h4 style={classes.labelSale}>Flash Sale</h4>
               </Grid>
-              <Grid item xs={6} sm={3}>
-                <Paper style={classes.paper}>xs=6 sm=3</Paper>
-              </Grid>
-              <Grid item xs={6} sm={3}>
-                <Paper style={classes.paper}>xs=6 sm=3</Paper>
-              </Grid>
-              <Grid item xs={6} sm={3}>
-                <Paper style={classes.paper}>xs=6 sm=3</Paper>
+              <Grid container spacing={1} className="mt-2">
+                <FlashSale />
               </Grid>
             </Grid>
           </div>

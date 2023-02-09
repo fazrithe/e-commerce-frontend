@@ -8,6 +8,7 @@ import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import Link from 'next/link';
 import Navbar from "@/components/home/navbar"
+import Footer from '@/components/home/footer';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -24,9 +25,7 @@ export default function App({ Component, pageProps }: AppProps) {
      <Navbar />
         <Component {...pageProps} />
        {/* credits */}
-      <div className="text-center mt-4">
-        <Link href="#">Fazri</Link>
-      </div>
+      <Footer />
   </>
   )
 }

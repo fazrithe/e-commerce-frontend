@@ -24,7 +24,6 @@ export default function CardHome(){
     <>
         <Grid item xs={6} sm={3}>
             <Card  orientation="horizontal"
-                    variant="outlined"
                     sx={{bgcolor: '#C69EFF' }}>
                 <CardContent sx={{ px: 2, bgcolor: 'primary' }}>
                     <Typography fontWeight="md" textColor="success.plainColor" mb={0.5}>
@@ -37,7 +36,6 @@ export default function CardHome(){
         </Grid>
         <Grid item xs={6} sm={3}>
             <Card  orientation="horizontal"
-                    variant="outlined"
                     sx={{bgcolor: '#C69EFF' }}>
                 <CardContent sx={{ px: 2, bgcolor: 'primary' }}>
                     <Typography fontWeight="md" textColor="success.plainColor" mb={0.5}>
@@ -50,7 +48,6 @@ export default function CardHome(){
         </Grid>
         <Grid item xs={6} sm={3}>
             <Card  orientation="horizontal"
-                    variant="outlined"
                     sx={{bgcolor: '#C69EFF' }}>
                 <CardContent sx={{ px: 2, bgcolor: 'primary' }}>
                     <Typography fontWeight="md" textColor="success.plainColor" mb={0.5}>
@@ -63,7 +60,6 @@ export default function CardHome(){
         </Grid>
         <Grid item xs={6} sm={3}>
             <Card  orientation="horizontal"
-                    variant="outlined"
                     sx={{bgcolor: '#C69EFF' }}>
                 <CardContent sx={{ px: 2, bgcolor: 'primary' }}>
                     <Typography fontWeight="md" textColor="success.plainColor" mb={0.5}>

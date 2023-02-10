@@ -5,6 +5,7 @@ import CategoryHome from "@/components/home/dashboard/categoryHome";
 import TabService from "@/components/home/dashboard/tabService";
 import FlashSale from "@/components/home/dashboard/flashSale";
 import CardHome from "@/components/home/dashboard/cardHome";
+import Products from "@/components/home/dashboard/products";
 
 const classes = {
   root: {
@@ -43,6 +44,9 @@ export default function Home() {
               </Grid>
               <Grid container spacing={1} className="mt-4">
                 <CardHome />
+              </Grid>
+              <Grid container spacing={1} className="mt-2">
+                <Products />
               </Grid>
             </Grid>
           </div>

@@ -36,9 +36,6 @@ export default function Home() {
                     <TabService />
                 </Paper>
               </Grid>
-              <Grid container spacing={1} className="mt-4 ml-2">
-              <h4 style={classes.labelSale}>Flash Sale</h4>
-              </Grid>
               <Grid container spacing={1} className="mt-2">
                 <FlashSale />
               </Grid>

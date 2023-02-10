@@ -1,3 +1,4 @@
+import * as React from 'react';
 import Grid from "@mui/material/Grid"
 import Paper from "@mui/material/Paper"
 import Image from "next/image";
@@ -9,6 +10,7 @@ import { CardActionArea, Chip } from '@mui/material';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import { color } from "@mui/system";
+import Link from 'next/link';
 
 const classes = {
     root: {
@@ -22,6 +24,15 @@ const classes = {
     }
   };
 
+function handleClick(event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
+    event.preventDefault();
+    console.info('You clicked a breadcrumb.');
+  
+}
+const printedBooks = [
+  { name: 'Ethical Design', id: 'ethical-design' },
+  { name: 'Design Systems', id: 'design-systems' },
+];
 export default function FlashSale(){
   return(
     <>
@@ -48,118 +59,148 @@ export default function FlashSale(){
           </Grid>
         </Grid>
         <Grid item xs={6} sm={2}>
+        <Link 
+        href="/product/[name]" 
+        as={`/product/Helm`}
+        >
             <Card sx={{ maxWidth: 345 }}>
               <CardActionArea>
                 <CardMedia
                   component="img"
                   height="140"
-                  image="/products/kemejapria.jpg"
-                  alt="green iguana"
+                  image="/products/helmkyt.jpg"
+                  alt="Helm KYT"
                 />
                 <CardContent>
-                  <Typography>Kemeja Lengan Panjang</Typography>
-                  <Typography gutterBottom variant="h6" component="div">
+                  <Typography>Helm KYT</Typography>
+                  <Typography gutterBottom fontWeight="bold" component="div">
                     <Chip label="26%" size="small" color="secondary" className="mr-2"></Chip>
                     Rp. 70.000
                   </Typography>
                 </CardContent>
               </CardActionArea>
             </Card>
+        </Link>
         </Grid>
         <Grid item xs={6} sm={2}>
+        <Link 
+        href="/product/[name]" 
+        as={`/product/Helm`}
+        >
             <Card sx={{ maxWidth: 345 }}>
               <CardActionArea>
                 <CardMedia
                   component="img"
                   height="140"
-                  image="/products/kemejapria.jpg"
-                  alt="green iguana"
+                  image="/products/helmkyt.jpg"
+                  alt="Helm KYT"
                 />
                 <CardContent>
-                  <Typography>Kemeja Lengan Panjang</Typography>
-                  <Typography gutterBottom variant="h6" component="div">
+                  <Typography>Helm KYT</Typography>
+                  <Typography gutterBottom fontWeight="bold" component="div">
                     <Chip label="26%" size="small" color="secondary" className="mr-2"></Chip>
                     Rp. 70.000
                   </Typography>
                 </CardContent>
               </CardActionArea>
             </Card>
+        </Link>
         </Grid>
         <Grid item xs={6} sm={2}>
+        <Link 
+        href="/product/[name]" 
+        as={`/product/Helm`}
+        >
             <Card sx={{ maxWidth: 345 }}>
               <CardActionArea>
                 <CardMedia
                   component="img"
                   height="140"
-                  image="/products/kemejapria.jpg"
-                  alt="green iguana"
-                />
-                 <CardContent>
-                  <Typography>Kemeja Lengan Panjang</Typography>
-                  <Typography gutterBottom variant="h6" component="div">
-                    <Chip label="26%" size="small" color="secondary" className="mr-2"></Chip>
-                    Rp. 70.000
-                  </Typography>
-                </CardContent>
-              </CardActionArea>
-            </Card>
-        </Grid>
-        <Grid item xs={6} sm={2}>
-            <Card sx={{ maxWidth: 345 }}>
-              <CardActionArea>
-                <CardMedia
-                  component="img"
-                  height="140"
-                  image="/products/kemejapria.jpg"
-                  alt="green iguana"
+                  image="/products/helmkyt.jpg"
+                  alt="Helm KYT"
                 />
                 <CardContent>
-                  <Typography>Kemeja Lengan Panjang</Typography>
-                  <Typography gutterBottom variant="h6" component="div">
+                  <Typography>Helm KYT</Typography>
+                  <Typography gutterBottom fontWeight="bold" component="div">
                     <Chip label="26%" size="small" color="secondary" className="mr-2"></Chip>
                     Rp. 70.000
                   </Typography>
                 </CardContent>
               </CardActionArea>
             </Card>
+        </Link>
         </Grid>
         <Grid item xs={6} sm={2}>
+        <Link 
+        href="/product/[name]" 
+        as={`/product/Helm`}
+        >
             <Card sx={{ maxWidth: 345 }}>
               <CardActionArea>
                 <CardMedia
                   component="img"
                   height="140"
-                  image="/products/kemejapria.jpg"
-                  alt="green iguana"
+                  image="/products/helmkyt.jpg"
+                  alt="Helm KYT"
                 />
-               <CardContent>
-                  <Typography>Kemeja Lengan Panjang</Typography>
-                  <Typography gutterBottom variant="h6" component="div">
+                <CardContent>
+                  <Typography>Helm KYT</Typography>
+                  <Typography gutterBottom fontWeight="bold" component="div">
                     <Chip label="26%" size="small" color="secondary" className="mr-2"></Chip>
                     Rp. 70.000
                   </Typography>
                 </CardContent>
               </CardActionArea>
             </Card>
+        </Link>
         </Grid>
         <Grid item xs={6} sm={2}>
+        <Link 
+        href="/product/[name]" 
+        as={`/product/Helm`}
+        >
             <Card sx={{ maxWidth: 345 }}>
               <CardActionArea>
                 <CardMedia
                   component="img"
                   height="140"
-                  image="/products/kemejapria.jpg"
-                  alt="green iguana"
+                  image="/products/helmkyt.jpg"
+                  alt="Helm KYT"
                 />
-                 <CardContent>
-                  <Typography>Kemeja Lengan Panjang</Typography>
-                  <Typography gutterBottom variant="h6" component="div">
+                <CardContent>
+                  <Typography>Helm KYT</Typography>
+                  <Typography gutterBottom fontWeight="bold" component="div">
                     <Chip label="26%" size="small" color="secondary" className="mr-2"></Chip>
                     Rp. 70.000
                   </Typography>
                 </CardContent>
               </CardActionArea>
             </Card>
+        </Link>
+        </Grid>
+        <Grid item xs={6} sm={2}>
+        <Link 
+        href="/product/[name]" 
+        as={`/product/Helm`}
+        >
+            <Card sx={{ maxWidth: 345 }}>
+              <CardActionArea>
+                <CardMedia
+                  component="img"
+                  height="140"
+                  image="/products/helmkyt.jpg"
+                  alt="Helm KYT"
+                />
+                <CardContent>
+                  <Typography>Helm KYT</Typography>
+                  <Typography gutterBottom fontWeight="bold" component="div">
+                    <Chip label="26%" size="small" color="secondary" className="mr-2"></Chip>
+                    Rp. 70.000
+                  </Typography>
+                </CardContent>
+              </CardActionArea>
+            </Card>
+        </Link>
         </Grid>
    </>
   )

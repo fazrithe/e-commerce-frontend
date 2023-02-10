@@ -31,12 +31,12 @@ export default function CategoryHome(){
                 <CardMedia
                   component="img"
                   height="140"
-                  image="/makanan.jpg"
-                  alt="green iguana"
+                  image="/aksesoris.jpg"
+                  alt="Aksesoris"
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h6" component="div">
-                    Makanan
+                    Aksesoris
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -48,12 +48,12 @@ export default function CategoryHome(){
                 <CardMedia
                   component="img"
                   height="140"
-                  image="/pakaian.png"
+                  image="/spartpart.jpg"
                   alt="green iguana"
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h6" component="div">
-                    Pakaian
+                    Spartpart
                   </Typography>
                 </CardContent>
               </CardActionArea>
@@ -65,12 +65,12 @@ export default function CategoryHome(){
                 <CardMedia
                   component="img"
                   height="140"
-                  image="/elektronik.jpg"
-                  alt="green iguana"
+                  image="/komunitas.jpg"
+                  alt="Komunitas"
                 />
                 <CardContent>
                   <Typography gutterBottom variant="h6" component="div">
-                    Elektronik
+                    Komunitas
                   </Typography>
                 </CardContent>
               </CardActionArea>

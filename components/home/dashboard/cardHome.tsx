@@ -26,17 +26,6 @@ export default function CardHome(){
             <Card  orientation="horizontal"
                     variant="outlined"
                     sx={{bgcolor: '#C69EFF' }}>
-                <CardOverflow>
-                    <AspectRatio ratio="1" sx={{ width: 90 }}>
-                    <Image
-                        src="/discount.jpg"
-                        alt="Vercel Logo"
-                        width={100}
-                        height={24}
-                        priority
-                    />
-                    </AspectRatio>
-                </CardOverflow>
                 <CardContent sx={{ px: 2, bgcolor: 'primary' }}>
                     <Typography fontWeight="md" textColor="success.plainColor" mb={0.5}>
                     Special Discount
@@ -50,17 +39,6 @@ export default function CardHome(){
             <Card  orientation="horizontal"
                     variant="outlined"
                     sx={{bgcolor: '#C69EFF' }}>
-                <CardOverflow>
-                    <AspectRatio ratio="1" sx={{ width: 90 }}>
-                    <Image
-                        src="/discount.jpg"
-                        alt="Vercel Logo"
-                        width={100}
-                        height={24}
-                        priority
-                    />
-                    </AspectRatio>
-                </CardOverflow>
                 <CardContent sx={{ px: 2, bgcolor: 'primary' }}>
                     <Typography fontWeight="md" textColor="success.plainColor" mb={0.5}>
                     Special Discount
@@ -74,17 +52,6 @@ export default function CardHome(){
             <Card  orientation="horizontal"
                     variant="outlined"
                     sx={{bgcolor: '#C69EFF' }}>
-                <CardOverflow>
-                    <AspectRatio ratio="1" sx={{ width: 90 }}>
-                    <Image
-                        src="/discount.jpg"
-                        alt="Vercel Logo"
-                        width={100}
-                        height={24}
-                        priority
-                    />
-                    </AspectRatio>
-                </CardOverflow>
                 <CardContent sx={{ px: 2, bgcolor: 'primary' }}>
                     <Typography fontWeight="md" textColor="success.plainColor" mb={0.5}>
                     Special Discount
@@ -98,17 +65,6 @@ export default function CardHome(){
             <Card  orientation="horizontal"
                     variant="outlined"
                     sx={{bgcolor: '#C69EFF' }}>
-                <CardOverflow>
-                    <AspectRatio ratio="1" sx={{ width: 90 }}>
-                    <Image
-                        src="/discount.jpg"
-                        alt="Vercel Logo"
-                        width={100}
-                        height={24}
-                        priority
-                    />
-                    </AspectRatio>
-                </CardOverflow>
                 <CardContent sx={{ px: 2, bgcolor: 'primary' }}>
                     <Typography fontWeight="md" textColor="success.plainColor" mb={0.5}>
                     Special Discount

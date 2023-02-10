@@ -43,21 +43,6 @@ export default function CardHome(){
                     </Typography>
                 </CardContent>
                 <Divider />
-                <CardOverflow
-                    variant="soft"
-                    color="primary"
-                    sx={{
-                    px: 0.2,
-                    writingMode: 'vertical-rl',
-                    textAlign: 'center',
-                    fontSize: 'xs2',
-                    fontWeight: 'xl2',
-                    letterSpacing: '1px',
-                    textTransform: 'uppercase',
-                    }}
-                >
-                    Flash
-                </CardOverflow>
 
             </Card>
         </Grid>
@@ -82,21 +67,6 @@ export default function CardHome(){
                     </Typography>
                 </CardContent>
                 <Divider />
-                <CardOverflow
-                    variant="soft"
-                    color="primary"
-                    sx={{
-                    px: 0.2,
-                    writingMode: 'vertical-rl',
-                    textAlign: 'center',
-                    fontSize: 'xs2',
-                    fontWeight: 'xl2',
-                    letterSpacing: '1px',
-                    textTransform: 'uppercase',
-                    }}
-                >
-                    Flash
-                </CardOverflow>
 
             </Card>
         </Grid>
@@ -121,21 +91,6 @@ export default function CardHome(){
                     </Typography>
                 </CardContent>
                 <Divider />
-                <CardOverflow
-                    variant="soft"
-                    color="primary"
-                    sx={{
-                    px: 0.2,
-                    writingMode: 'vertical-rl',
-                    textAlign: 'center',
-                    fontSize: 'xs2',
-                    fontWeight: 'xl2',
-                    letterSpacing: '1px',
-                    textTransform: 'uppercase',
-                    }}
-                >
-                    Flash
-                </CardOverflow>
 
             </Card>
         </Grid>
@@ -160,21 +115,6 @@ export default function CardHome(){
                     </Typography>
                 </CardContent>
                 <Divider />
-                <CardOverflow
-                    variant="soft"
-                    color="primary"
-                    sx={{
-                    px: 0.2,
-                    writingMode: 'vertical-rl',
-                    textAlign: 'center',
-                    fontSize: 'xs2',
-                    fontWeight: 'xl2',
-                    letterSpacing: '1px',
-                    textTransform: 'uppercase',
-                    }}
-                >
-                    Flash
-                </CardOverflow>
 
             </Card>
         </Grid>

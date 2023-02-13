@@ -10,7 +10,9 @@ import {FormGroup,
         CardActionArea,
         CardMedia,
         Chip,
-        Container
+        Container,
+        Stack,
+        Breadcrumbs
         } from '@mui/material'
 import Box from '@mui/joy/Box';
 import Card from '@mui/joy/Card';
@@ -22,6 +24,7 @@ import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import Button from '@mui/material/Button';
 import Link from 'next/link';
 import ReactPlayer from "react-player";
+import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
 export default function Register(){
     const [showPassword, setShowPassword] = React.useState(false);
@@ -31,10 +34,34 @@ export default function Register(){
     const handleMouseDownPassword = (event: React.MouseEvent<HTMLButtonElement>) => {
       event.preventDefault();
     };
+    const breadcrumbs = [
+        <Link key="1" color="inherit" href="/">
+          Home
+        </Link>,
+        <Link
+          key="2"
+          color="inherit"
+          href="/material-ui/getting-started/installation/"
+        >
+          Aksesoris
+        </Link>,
+        <Typography key="3">
+          Login
+        </Typography>,
+      ];
+
     return(
         <>
            <div>
         <Container fixed>
+            <Stack spacing={2} className="mt-2">
+                <Breadcrumbs
+                    separator={<NavigateNextIcon fontSize="small" />}
+                    aria-label="breadcrumb"
+                >
+                    {breadcrumbs}
+                </Breadcrumbs>
+            </Stack> 
         <Grid container spacing={1} className="mt-2">
           <Grid item xs={6} sm={6}>
             <Card component="li" sx={{ minWidth: 300, flexGrow: 1 }}>

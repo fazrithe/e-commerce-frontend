@@ -1,9 +1,10 @@
 import * as React from 'react';
-import {FormGroup, FormControl, InputLabel, OutlinedInput, InputAdornment, IconButton, Grid, Paper, Typography} from '@mui/material'
+import {FormGroup, FormControl, Container, Stack, Breadcrumbs, InputLabel, OutlinedInput, InputAdornment, IconButton, Grid, Paper, Typography} from '@mui/material'
 import Visibility from '@mui/icons-material/Visibility';
 import VisibilityOff from '@mui/icons-material/VisibilityOff';
 import Button from '@mui/material/Button';
 import Link from 'next/link';
+import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 
 export default function Login(){
     const [showPassword, setShowPassword] = React.useState(false);
@@ -13,14 +14,38 @@ export default function Login(){
     const handleMouseDownPassword = (event: React.MouseEvent<HTMLButtonElement>) => {
       event.preventDefault();
     };
+    const breadcrumbs = [
+        <Link key="1" color="inherit" href="/">
+          Home
+        </Link>,
+        <Link
+          key="2"
+          color="inherit"
+          href="/material-ui/getting-started/installation/"
+        >
+          Aksesoris
+        </Link>,
+        <Typography key="3" color="text.primary">
+          Login
+        </Typography>,
+      ];
     return(
-        <Grid container alignItems="center" className="ml-2 mt-4 d-flex justify-content-center">
+            <Container fixed>
+            <Stack spacing={2} className="mt-2">
+                <Breadcrumbs
+                    separator={<NavigateNextIcon fontSize="small" />}
+                    aria-label="breadcrumb"
+                >
+                    {breadcrumbs}
+                </Breadcrumbs>
+            </Stack>  
+        <Grid container alignItems="center" className="mt-4 d-flex justify-content-center">
         <Paper elevation={0}>
-            <Grid container alignItems="center" className="ml-2 mt-4">
-                <Grid item xs={6} sm={9}>
+            <Grid container alignItems="center" className="mt-4">
+                <Grid xs={9} sm={9}>
                     <Typography variant="h6">Masuk</Typography>
                 </Grid>
-                <Grid item xs={6} sm={2}>
+                <Grid item xs={2} sm={2}>
                     <Link href="register">
                     <Typography color="secondary">Daftar</Typography>
                     </Link>
@@ -66,5 +91,6 @@ export default function Login(){
             </FormGroup>
             </Paper>
             </Grid>
+            </Container>
     )
 }

@@ -4,7 +4,7 @@ import Image from "next/image";
 import Card from "@mui/material/Card";
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
-import Typography from '@mui/material/Typography';
+import Typography from '@mui/joy/Typography';
 import { CardActionArea } from '@mui/material';
 
 const classes = {
@@ -35,7 +35,7 @@ export default function CategoryHome(){
                   alt="Aksesoris"
                 />
                 <CardContent>
-                  <Typography gutterBottom variant="h6" component="div">
+                  <Typography fontSize="14" fontWeight="lg">
                     Aksesoris
                   </Typography>
                 </CardContent>
@@ -52,7 +52,7 @@ export default function CategoryHome(){
                   alt="green iguana"
                 />
                 <CardContent>
-                  <Typography gutterBottom variant="h6" component="div">
+                  <Typography fontSize="14" fontWeight="lg">
                     Spartpart
                   </Typography>
                 </CardContent>
@@ -65,12 +65,12 @@ export default function CategoryHome(){
                 <CardMedia
                   component="img"
                   height="140"
-                  image="/komunitas.jpg"
+                  image="/bengkel.jpg"
                   alt="Komunitas"
                 />
                 <CardContent>
-                  <Typography gutterBottom variant="h6" component="div">
-                    Komunitas
+                  <Typography fontSize="14" fontWeight="lg">
+                    Bengkel
                   </Typography>
                 </CardContent>
               </CardActionArea>

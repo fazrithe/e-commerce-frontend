@@ -37,25 +37,26 @@ export default function FlashSale(){
   return(
     <>
         <Grid container alignItems="center" className="ml-2 mt-4">
-          <Grid item xs={6} sm={2}>
+          <Grid item xs={7} sm={2}>
             <Typography gutterBottom variant="h6" component="div">
               Harga promo hari ini
             </Typography>
           </Grid>
-          <Grid item xs={6} sm={2}>
-            <Typography gutterBottom component="div" color="secondary">
-              Berakhir dalam
+          <Grid item xs={4} sm={2}>
+          <Typography gutterBottom component="div" color="secondary">
+              Lihat Semua
             </Typography>
           </Grid>
-          <Grid item xs={6} sm={2}>
+          <Grid item xs={6} sm={2} alignItems="center">
+          <Typography gutterBottom component="div" color="secondary" className="ml-4">
+              Berakhir dalam
+            </Typography>
             <Typography gutterBottom component="div" color="secondary" padding={2}>
               <Chip label="1" size="small" sx={{bgcolor:'red', color:'white'}} className="mr-2 ml-2"></Chip>:<Chip label="1" size="small" sx={{bgcolor:'red', color:'white'}} className="mr-2 ml-2"></Chip>:<Chip label="1" size="small" sx={{bgcolor:'red', color:'white'}} className="mr-2 ml-2"></Chip>
             </Typography>
           </Grid>
           <Grid item xs={6} sm={2}>
-            <Typography gutterBottom component="div" color="secondary">
-              Lihat Semua
-            </Typography>
+            
           </Grid>
         </Grid>
         <Grid item xs={6} sm={2}>

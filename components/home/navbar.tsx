@@ -20,6 +20,7 @@ import { spacing } from '@mui/system';
 import { purple } from '@mui/material/colors';
 import Button, { ButtonProps } from '@mui/material/Button';
 import Link from 'next/link';
+import { Grid } from '@mui/material';
 
 const pages = ['Categories'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -177,6 +178,18 @@ const Navbar = () => {
                 display: { xs: 'block', md: 'none' },
               }}
             >
+               <Grid container className="ml-2">
+                <Grid item>
+                <Link href="login">
+                  <ColorButton variant="contained" className='mr-2'>Masuk</ColorButton>
+                </Link>
+              </Grid>
+              <Grid item>
+                <Link href="register">
+                  <ColorButton variant="contained" className='mr-2'>Register</ColorButton>
+                </Link>
+              </Grid>
+            </Grid>
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign="center">{page}</Typography>
@@ -213,10 +226,10 @@ const Navbar = () => {
           </Box>
           <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
           <Link href="login">
-          <ColorButton variant="contained" className='mr-2'>Login</ColorButton>
+          <ColorButton variant="contained" className='mr-2'>Masuk</ColorButton>
           </Link>
           <Link href="register">
-          <ColorButton variant="contained">Register</ColorButton>
+          <ColorButton variant="contained">Daftar</ColorButton>
           </Link>
           </Box>
         </Toolbar>

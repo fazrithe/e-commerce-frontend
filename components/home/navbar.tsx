@@ -19,6 +19,7 @@ import InputBase from '@mui/material/InputBase';
 import { spacing } from '@mui/system';
 import { purple } from '@mui/material/colors';
 import Button, { ButtonProps } from '@mui/material/Button';
+import Link from 'next/link';
 
 const pages = ['Categories'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -211,8 +212,12 @@ const Navbar = () => {
             </Tooltip>
           </Box>
           <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
+          <Link href="login">
           <ColorButton variant="contained" className='mr-2'>Login</ColorButton>
+          </Link>
+          <Link href="register">
           <ColorButton variant="contained">Register</ColorButton>
+          </Link>
           </Box>
         </Toolbar>
       </Container>

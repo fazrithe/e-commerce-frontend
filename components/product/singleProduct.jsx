@@ -50,7 +50,7 @@ export default function SingleProduct(props){
                   Test
               </Grid>
               <Grid item xs={8} sm={5}>
-                    <Detail/>
+                  <Detail/>
               </Grid>
               <Grid item xs={6} sm={2}>
                   Test

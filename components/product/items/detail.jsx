@@ -2,6 +2,7 @@ import { Box, Button, Grid, Rating, Stack, Typography } from "@mui/material";
 import StarIcon from '@mui/icons-material/Star';
 import TabDescription from './tabDescription'
 import Store from './store'
+import { Place, LocalShipping } from "@mui/icons-material";
 
 let labels = {
     0.5: 'Useless',
@@ -69,6 +70,31 @@ export default function Detail(){
                 <Store />
         </Grid>
         <hr></hr>
+        <Grid container>
+            <Grid item>
+                <Typography fontWeight="bold">Pengiriman:</Typography>
+            </Grid>
+        </Grid>
+        <Grid container spacing={1}>
+            <Grid item>
+                <Place />
+            </Grid>
+            <Grid item>
+                <Typography>Dikirim dari</Typography>
+            </Grid>
+            <Grid item>
+                <Typography fontWeight="bold">Jakarta Barat</Typography>
+            </Grid>
+        </Grid>
+        <Grid container spacing={1}>
+            <Grid item>
+                <LocalShipping />
+            </Grid>
+            <Grid item>
+                <Typography>Ongkir Reguler 18 rb - 23 rb</Typography>
+            </Grid>
+        </Grid>
+
         </>    
     )
 }

@@ -53,7 +53,7 @@ export default function Login(){
             </Grid>
             <FormGroup>
                 <FormControl sx={{ m: 1, width: '35ch' }} variant="outlined">
-                <InputLabel>Email</InputLabel>
+                <InputLabel color="secondary">Email</InputLabel>
                 <OutlinedInput
                     type="text"
                     label="Email"
@@ -63,7 +63,7 @@ export default function Login(){
             </FormGroup>
             <FormGroup>
                 <FormControl sx={{ m: 1, width: '35ch' }} variant="outlined">
-                <InputLabel htmlFor="outlined-adornment-password">Password</InputLabel>
+                <InputLabel htmlFor="outlined-adornment-password" color="secondary">Password</InputLabel>
                 <OutlinedInput
                     id="outlined-adornment-password"
                     type={showPassword ? 'text' : 'password'}
@@ -86,7 +86,7 @@ export default function Login(){
             </FormGroup>
               <FormGroup>
                 <FormControl sx={{ m: 1, width: '35ch' }} variant="outlined">
-                    <Button variant="contained">Login</Button>
+                    <Button variant="contained" color="secondary">Login</Button>
                 </FormControl>
             </FormGroup>
             </Paper>

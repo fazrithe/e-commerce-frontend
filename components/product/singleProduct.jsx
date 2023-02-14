@@ -8,6 +8,7 @@ import { Breadcrumbs,
         } from "@mui/material";
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import Detail from './items/detail';
+import BuyProduct from './items/buyProduct';
 
 function handleClick(event) {
     event.preventDefault();
@@ -49,11 +50,11 @@ export default function SingleProduct(props){
               <Grid item xs={8} sm={4}>
                   Test
               </Grid>
-              <Grid item xs={8} sm={5}>
+              <Grid item xs={12} sm={5}>
                   <Detail/>
               </Grid>
-              <Grid item xs={6} sm={2}>
-                  Test
+              <Grid item xs={8} sm={3}>
+                  <BuyProduct/>
               </Grid>
             </Grid>
             </Container></div>

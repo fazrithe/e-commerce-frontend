@@ -1,11 +1,11 @@
 import Container from "@mui/material/Container"
 import Grid from "@mui/material/Grid"
 import Paper from "@mui/material/Paper"
-import CategoryHome from "@/components/home/dashboard/categoryHome";
-import TabService from "@/components/home/dashboard/tabService";
-import FlashSale from "@/components/home/dashboard/flashSale";
-import CardHome from "@/components/home/dashboard/cardHome";
-import Products from "@/components/home/dashboard/products";
+import CategoryHome from "@/components/home/dashboard/CategoryHome";
+import TabService from "@/components/home/dashboard/TabService";
+import FlashSale from "@/components/home/dashboard/FlashSale";
+import CardHome from "@/components/home/dashboard/CardHome";
+import Products from "@/components/home/dashboard/Products";
 import Carousel from 'react-bootstrap/Carousel';
 
 const classes = {

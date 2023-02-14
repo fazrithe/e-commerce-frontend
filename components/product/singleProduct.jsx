@@ -7,8 +7,9 @@ import { Breadcrumbs,
          Grid
         } from "@mui/material";
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
-import Detail from './items/detail';
-import BuyProduct from './items/buyProduct';
+import Detail from './items/Detail';
+import BuyProduct from './items/BuyProduct';
+import GalleryProduct from './items/GalleryProduct'
 
 function handleClick(event) {
     event.preventDefault();
@@ -47,8 +48,8 @@ export default function SingleProduct(props){
                 </Breadcrumbs>
             </Stack>  
             <Grid container spacing={1} className="mt-4">
-              <Grid item xs={8} sm={4}>
-                  Test
+              <Grid item xs={12} sm={4}>
+                  <GalleryProduct/>
               </Grid>
               <Grid item xs={12} sm={5}>
                   <Detail/>

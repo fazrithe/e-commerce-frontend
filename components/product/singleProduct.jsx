@@ -1,6 +1,13 @@
 import * as React from 'react';
-import { Breadcrumbs, Container, Link, Typography, Stack } from "@mui/material";
+import { Breadcrumbs, 
+         Container, 
+         Link, 
+         Typography, 
+         Stack,
+         Grid
+        } from "@mui/material";
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
+import Detail from './items/detail';
 
 function handleClick(event) {
     event.preventDefault();
@@ -38,6 +45,17 @@ export default function SingleProduct(props){
                     {breadcrumbs}
                 </Breadcrumbs>
             </Stack>  
+            <Grid container spacing={1} className="mt-4">
+              <Grid item xs={8} sm={4}>
+                  Test
+              </Grid>
+              <Grid item xs={8} sm={5}>
+                    <Detail/>
+              </Grid>
+              <Grid item xs={6} sm={2}>
+                  Test
+              </Grid>
+            </Grid>
             </Container></div>
     );
 }

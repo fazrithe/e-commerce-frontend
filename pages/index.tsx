@@ -10,7 +10,7 @@ import Carousel from 'react-bootstrap/Carousel';
 
 const classes = {
   root: {
-    flexGrow: 1
+    flexGrow: 2
   },
   paper: {
     padding: 20,
@@ -84,8 +84,8 @@ export default function Home() {
               {/*This item will be 12 units on extra small screens */}
               {/*But will be 6 units on small screens */}
               <CategoryHome />
-              <Grid item xs={12} sm={6}>
-                <Paper>
+              <Grid item xs={12} sm={5} className="ml-2 mt-4">
+                <Paper className="mt-3">
                     <TabService />
                 </Paper>
               </Grid>

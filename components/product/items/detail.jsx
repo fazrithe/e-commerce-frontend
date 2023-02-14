@@ -1,6 +1,7 @@
 import { Box, Button, Grid, Rating, Stack, Typography } from "@mui/material";
 import StarIcon from '@mui/icons-material/Star';
-import TabDescription from "./tabDescription"
+import TabDescription from './tabDescription'
+import Store from './store'
 
 let labels = {
     0.5: 'Useless',
@@ -64,6 +65,10 @@ export default function Detail(){
                 <TabDescription />
             </Grid>
         </Grid>
+        <Grid container className="mt-4">
+                <Store />
+        </Grid>
+        <hr></hr>
         </>    
     )
 }

@@ -7,8 +7,8 @@ import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
 import '@fontsource/roboto/700.css';
 import Link from 'next/link';
-import Navbar from "@/components/home/navbar"
-import Footer from '@/components/home/footer';
+import Navbar from "@/components/home/Navbar"
+import Footer from '@/components/home/Footer';
 
 export default function App({ Component, pageProps }: AppProps) {
   return (

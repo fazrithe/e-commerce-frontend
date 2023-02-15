@@ -1,7 +1,7 @@
 import { Box, Button, Grid, Rating, Stack, Typography } from "@mui/material";
 import StarIcon from '@mui/icons-material/Star';
-import TabDescription from './tabDescription'
-import Store from './store'
+import TabDescription from '@/components/product/items/TabDescription'
+import Store from './Store'
 import { Place, LocalShipping } from "@mui/icons-material";
 
 let labels = {
@@ -35,7 +35,6 @@ export default function Detail(){
                 }}
                 >
                 <Rating
-                    name="text-feedback"
                     value={value}
                     readOnly
                     precision={0.5}

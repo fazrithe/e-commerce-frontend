@@ -6,7 +6,7 @@ import Carousel4 from './carousel/Carousel4'
 import 'react-gallery-carousel/dist/index.css';
 import { Grid } from '@mui/material';
 
-const imageIDs = Array(30) // the maximum is currently 149
+const imageIDs = Array(5) // the maximum is currently 149
   .fill(1)
   .map((_, i) => i + 1);
 const images = imageIDs.map((imageID) => {
@@ -22,8 +22,8 @@ const images = imageIDs.map((imageID) => {
 function MyApp() {
   return (
     <Grid container>
-      <Grid item xs={12} sm={12}>
-      <div className='carousel-page'>
+      <Grid item xs={12} sm={12} padding={2}>
+      <div className=''>
         <Carousel2 images={images} style={{ height: 200, width: 200 }}  />
       </div>
     </Grid>

@@ -4,11 +4,13 @@ import { Breadcrumbs,
          Link, 
          Typography, 
          Stack,
-         Grid
+         Grid,
+         Hidden
         } from "@mui/material";
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import Detail from './items/Detail';
 import BuyProduct from './items/BuyProduct';
+import BuyProductMobile from './items/BuyProductMobile';
 import GalleryProduct from './items/GalleryProduct'
 
 function handleClick(event) {
@@ -55,7 +57,12 @@ export default function SingleProduct(props){
                   <Detail/>
               </Grid>
               <Grid item xs={8} sm={3}>
+                <Hidden only="xs">
                   <BuyProduct/>
+                </Hidden>
+                <Hidden only={['sm', 'lg']}>
+                  <BuyProductMobile />
+                </Hidden>
               </Grid>
             </Grid>
             </Container></div>

@@ -19,6 +19,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/home/dashboard/flashSale.jsx", "components/product/singleProduct.jsx", "components/product/singleProduct.jsx", "components/product/items/detail.jsx", "components/product/items/detail.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/home/dashboard/flashSale.jsx", "components/product/singleProduct.jsx", "components/product/singleProduct.jsx", "components/product/items/detail.jsx", "components/product/items/detail.jsx", "components/product/items/GalleryProduct.jsx", "components/product/items/GalleryProduct.jsx"],
   "exclude": ["node_modules"]
 }
